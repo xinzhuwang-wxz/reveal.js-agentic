@@ -15,3 +15,5 @@ dist/reveal.es5.js
 react/dist
 react/demo/dist
 dev.html
+# Local Agentic authoring state (never commit)
+.agentic-state/

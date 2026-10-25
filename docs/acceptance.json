@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "project": "hakimel/reveal.js",
+    "release": "6.0.2",
+    "commit": "75dff6f515d2d08df0c32cf2b7328b89425c6f25",
+    "license": "MIT"
+  },
+  "qualifiedAeCommit": "001826fa417cbe042d8094e7731cc8e9d1dc332b",
+  "runtimeFiles": {
+    "agentic/ae.mjs": "63dd8262155ea2d806305c9931865095520db57df7292303d9c7c3d5ff423068",
+    "agentic/host.mjs": "7e2ea6c9a00f523afc6c3b5e20dcd44cfad90da3892ef58eb8c6d0c0c93f7bba",
+    "agentic/server.mjs": "263bf734b6f1cca4a3d94d0f2c14188736272514bdb5920c5baab1af8e24e9e9",
+    "agentic/assistant.mjs": "b3d1315cfc20dea85ccbd1fba9de11527eee31004a7c8058ef82cce347a685ba"
+  },
+  "lifecycle": {
+    "profile": "reveal-upstream-v1",
+    "delivery": "complete",
+    "deliveryCheck": "valid",
+    "preApplyBaselineHash": "bca5f655d04c58930b2262f4ff5dcfc8f54bfb2adc9ba73b48d31fb45ad2322f"
+  },
+  "modelMode": "deterministic simulated caller; no paid API",
+  "standaloneNodeTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "upstreamOriginal": {
+    "typecheck": "pass",
+    "qunitPages": 17,
+    "qunitTests": 143,
+    "assertionsPassed": 411,
+    "assertionsFailed": 4,
+    "limitation": "Two MathJax4 rendering tests cannot load the external CDN script (ERR_EMPTY_RESPONSE)."
+  },
+  "finalUpstream": {
+    "typecheck": "pass",
+    "qunitPages": 17,
+    "qunitTests": 143,
+    "assertionsPassed": 411,
+    "assertionsFailed": 4,
+    "perPageParity": "identical to original baseline",
+    "limitation": "Two MathJax4 rendering tests cannot load the external CDN script (ERR_EMPTY_RESPONSE)."
+  },
+  "extendedBrowser": {
+    "passed": 10,
+    "pageErrors": 0,
+    "scope": "real local host/shared AE runtime; deterministic simulated caller"
+  },
+  "screenshotHashes": {
+    "assets/approval.png": "c8a7a6d961ed830f9c9181d778aed930016fb7dcfe73e57b1a85aa039f78cc8f",
+    "assets/after.png": "88341c68e88b6569067c9f4480b207a43a58da757cb88430fc31787ae1bea5dd",
+    "assets/mobile.png": "05cb0ecc249aeadaed1e0ec9089c0c50b5be16b92e13a3992b45c954e3e54169",
+    "assets/before.png": "1e8305926e9f2f2624610b5c340f27c44da7ccf69ea1fd4e73df45aa0464dfe2"
+  }
+}
