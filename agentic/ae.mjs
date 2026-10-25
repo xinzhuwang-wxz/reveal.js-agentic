@@ -1,0 +1,10 @@
+import {createRequire} from 'node:module';
+import {resolve,isAbsolute} from 'node:path';
+import {pathToFileURL} from 'node:url';
+if(!process.env.AE_ROOT || !isAbsolute(process.env.AE_ROOT)) throw Error('Set AE_ROOT to the absolute built Agentic Everything repository.');
+const root=resolve(process.env.AE_ROOT);
+const load=p=>import(pathToFileURL(resolve(root,p)).href);
+export const {ToolBroker,validateDefinitions,parseCapabilityArguments}=await load('packages/capabilities/dist/index.js');
+export const {GovernedRuntime}=await load('packages/runtime-core/dist/index.js');
+export const {PolicyError,digest,samePrincipal}=await load('packages/policy/dist/index.js');
+export const {z}=createRequire(resolve(root,'package.json'))('zod');
